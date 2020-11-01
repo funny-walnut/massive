@@ -20,13 +20,9 @@ public static int [] MadMax(int N, int [] Tele)
                     }else {	
                         Tele [i] = number;	
                     }	
-
-
                 }	
             } while (!unic);	
         }	
-
-
 
         for (int a = 1;a <Tele.length; a++)
         {
