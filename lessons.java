@@ -1,9 +1,14 @@
-int [] MadMax(int N, int [] Tele)
+import java.util.*;
+
+public class Level1
+{
+
+public static int [] MadMax(int N, int [] Tele)
     {
         boolean unic;
         Random random = new Random();
         Tele[0] = random.nextInt(256);
-        System.out.println(Tele[0]);
+
         for (int i = 1; i<N; i++) {
             do {
                 unic = true;
@@ -17,8 +22,7 @@ int [] MadMax(int N, int [] Tele)
                     }
 
 
-                }System.out.println("i = " + i);
-                System.out.print(Tele[i] +" ");
+                }
             } while (!unic);
         }
 
@@ -51,3 +55,4 @@ int [] MadMax(int N, int [] Tele)
         }
         return Tele;
     }
+}
